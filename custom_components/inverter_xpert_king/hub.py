@@ -42,7 +42,7 @@ class Hub:
 
     async def test_connection(self) -> bool:
         """Test connectivity with inverter"""
-        #await asyncio.sleep(1)
+        await asyncio.sleep(1)
         return self.inverter_client.get_mode()
 
 
